@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+        .card {
+            transition: transform 0.2s;
+            margin-bottom: 30px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+        /* Mengubah warna teks di navbar */
+        .navbar-brand {
+            color: #000 !important;
+        }
+        .navbar-nav .nav-link {
+            color: #000 !important;
+        }
+        /* Menebalkan tulisan Beranda */
+        .navbar-nav .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg card-header">
+        <a class="navbar-brand" href="#">Bangun Datar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="tgspw1.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="macam_macam.html">Macam-macam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Ciri_ciri.html">Ciri-ciri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sifat_sifat.html">Sifat-sifat</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Latihan.html">Latihan</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Latihan Soal Bangun Datar</h1>
+        <p class="text-center">Isilah latihan soal di bawah ini sesuai dengan instruksi yang diberikan.</p>
+
+        <!-- Form untuk siswa mengisi jawaban -->
+        <form id="lembarKerja">
+
+            <div class="form-group">
+                <h2>Soal 1: Luas Persegi Panjang</h2>
+                <p>Sebuah persegi panjang memiliki panjang 8 cm dan lebar 5 cm. Berapa luasnya?</p>
+                <label for="jawaban1">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban1" placeholder="Masukkan jawaban Anda">
+                <p id="feedback1" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 2: Luas Segitiga</h2>
+                <p>Sebuah segitiga memiliki alas 10 cm dan tinggi 6 cm. Hitung luasnya!</p>
+                <label for="jawaban2">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban2" placeholder="Masukkan jawaban Anda">
+                <p id="feedback2" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 3: Luas Lingkaran</h2>
+                <p>Sebuah lingkaran memiliki jari-jari 7 cm. Berapa luasnya? (π = 22/7)</p>
+                <label for="jawaban3">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban3" placeholder="Masukkan jawaban Anda">
+                <p id="feedback3" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 4: Luas Jajar Genjang</h2>
+                <p>Sebuah jajar genjang memiliki alas 12 cm dan tinggi 5 cm. Hitunglah luasnya!</p>
+                <label for="jawaban4">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban4" placeholder="Masukkan jawaban Anda">
+                <p id="feedback4" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 5: Luas Trapesium</h2>
+                <p>Sebuah trapesium memiliki panjang sisi sejajar a = 10 cm dan b = 6 cm, dengan tinggi 4 cm. Berapa luas trapesium tersebut?</p>
+                <label for="jawaban5">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban5" placeholder="Masukkan jawaban Anda">
+                <p id="feedback5" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 6: Luas Persegi</h2>
+                <p>Sebuah persegi memiliki sisi sepanjang 5 cm. Hitunglah luasnya!</p>
+                <label for="jawaban6">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban6" placeholder="Masukkan jawaban Anda">
+                <p id="feedback6" class="feedback"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>Soal 7: Luas Belah Ketupat</h2>
+                <p>Sebuah belah ketupat memiliki panjang diagonal 1 = 10 cm dan diagonal 2 = 8 cm. Hitunglah luasnya!</p>
+                <label for="jawaban7">Jawaban:</label>
+                <input type="text" class="form-control" id="jawaban7" placeholder="Masukkan jawaban Anda">
+                <p id="feedback7" class="feedback"></p>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="periksaJawaban()">Kirim Jawaban</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Belajar Bangun Datar. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        function periksaJawaban() {
+            // Jawaban yang benar
+            const kunciJawaban = [40, 30, 154, 60, 32, 25, 40];
+
+            // Ambil jawaban siswa
+            const jawaban1 = document.getElementById('jawaban1').value;
+            const jawaban2 = document.getElementById('jawaban2').value;
+            const jawaban3 = document.getElementById('jawaban3').value;
+            const jawaban4 = document.getElementById('jawaban4').value;
+            const jawaban5 = document.getElementById('jawaban5').value;
+            const jawaban6 = document.getElementById('jawaban6').value;
+            const jawaban7 = document.getElementById('jawaban7').value;
+
+            const jawabanSiswa = [jawaban1, jawaban2, jawaban3, jawaban4, jawaban5, jawaban6, jawaban7];
+
+            // Loop untuk memeriksa jawaban dan memberikan feedback
+            for (let i = 0; i < kunciJawaban.length; i++) {
+                let feedback = document.getElementById('feedback' + (i + 1));
+                if (parseInt(jawabanSiswa[i]) === kunciJawaban[i]) {
+                    feedback.innerHTML = 'Benar! Jawabannya adalah ' + kunciJawaban[i];
+                    feedback.className = 'feedback correct';
+                } else {
+                    feedback.innerHTML = 'Salah, jawaban yang benar adalah ' + kunciJawaban[i];
+                    feedback.className = 'feedback incorrect';
+                }
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
